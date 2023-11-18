@@ -1,0 +1,103 @@
+:root {
+    --font: tewi;
+    --light-font-color: #D8DEE9;
+    --light-background-color: #2E3440;
+    --dark-font-color: #f0afe6;
+    --dark-background-color: #0e0a0a;
+    --blockquote-background: #3B4252;
+    --link-color: #efd0ea;
+    --link-decoration-color: #efd0ea;
+}
+
+@media(prefers-color-scheme:dark) {
+    :root {
+        --font-color: var(--dark-font-color);
+        --background-color: var(--dark-background-color);
+    }
+}
+
+@media(prefers-color-scheme:light) {
+    :root {
+        --font-color: var(--light-font-color);
+        --background-color: var(--light-background-color);
+    }
+}
+
+@font-face {
+    font-family: var(--font);
+    src: url("/fonts/tewi.ttf");
+}
+
+html {
+    font-family: var(--font);
+    color: var(--font-color);
+    background-color: var(--background-color);
+}
+
+body {
+    max-width: 920px;
+    margin: 0 auto;
+    padding: 1rem 2rem;
+}
+
+blockquote, pre {
+    margin: 1rem -1rem;
+    padding: 1rem;
+}
+
+blockquote {
+    background-color: var(--blockquote-background);
+    border-left: 3px solid var(--link-decoration-color);
+}
+
+pre {
+    overflow-x: auto;
+    font-family: var(--font);
+}
+
+ul, li {
+    margin-left: 0;
+    padding: 0;
+}
+
+li:not(:last-child) {
+    margin-bottom: 0.5rem;
+}
+
+a {
+    position: relative;
+    color: var(--link-color);
+}
+
+a:before {
+    content: '⇒';
+    color: var(--link-decoration-color);
+    text-decoration: none;
+    font-weight: bold;
+    position: absolute;
+    left: -1.25rem;
+}
+
+details, 
+details:not([open]) summary,
+details:not([open]) summary a {
+    color: var(--details-color);
+}
+
+details summary a:before {
+    display: none;
+}
+
+dl dt {
+    font-weight: bold;
+}
+
+dl dt:not(:first-child) {
+    margin-top: 0.5rem;
+}
+
+label, dl dt {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
