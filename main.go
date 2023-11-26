@@ -201,26 +201,6 @@ var gemtextPage = template.Must(template.
         </ul>
         {{- end }}
 </article>
-<details>
-        <summary>
-                Proxied content from <a href="{{.URL.String | safeURL}}">{{.URL.String}}</a>
-                {{if .External}}
-                (external content)
-                {{end}}
-        </summary>
-        <p>Gemini request details:
-        <dl>
-                <dt>Original URL</dt>
-                <dd><a href="{{.URL.String | safeURL}}">{{.URL.String}}</a></dd>
-                <dt>Status code</dt>
-                <dd>{{.Resp.Status}}</dd>
-                <dt>Meta</dt>
-                <dd>{{.Resp.Meta}}</dd>
-                <dt>Proxied by</dt>
-                <dd><a href="https://sr.ht/~sircmpwn/kineto">kineto</a></dd>
-        </dl>
-
-</details>
 `))
 
 var inputPage = template.Must(template.

@@ -1,3 +1,8 @@
+@font-face {
+    font-family: tewi;
+    src: url("fonts/tewi.ttf");
+  }
+
 :root {
     --font: tewi;
     --light-font-color: #D8DEE9;
