@@ -2,11 +2,11 @@
     --font: tewi;
     --light-font-color: #D8DEE9;
     --light-background-color: #2E3440;
-    --dark-font-color: #f0afe6;
-    --dark-background-color: #0e0a0a;
-    --blockquote-background: #3B4252;
-    --link-color: #efd0ea;
-    --link-decoration-color: #efd0ea;
+    --dark-font-color: #E0CEED;
+    --dark-background-color: #29222E;
+    --blockquote-background: #1D161F;
+    --link-color: #d8aee4;
+    --link-decoration-color: #d8aee4;
 }
 
 @media(prefers-color-scheme:dark) {
@@ -41,18 +41,21 @@ body {
 }
 
 blockquote, pre {
-    margin: 1rem -1rem;
+    /* margin: 1rem -1rem; */
     padding: 1rem;
-}
-
-blockquote {
     background-color: var(--blockquote-background);
     border-left: 3px solid var(--link-decoration-color);
+}
+
+pre[alt^="ASCII-BLOCK"] {
+    background-color: var(--background-color);
+    border-left: 0px;
 }
 
 pre {
     overflow-x: auto;
     font-family: var(--font);
+
 }
 
 ul, li {
