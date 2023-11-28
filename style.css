@@ -52,6 +52,13 @@ pre[alt^="ASCII-BLOCK"] {
     border-left: 0px;
 }
 
+pre[alt^="PRE"] {
+    background-color: var(--background-color);
+    border-left: 0px;
+    padding: 0rem
+}
+
+
 pre {
     overflow-x: auto;
     font-family: var(--font);
