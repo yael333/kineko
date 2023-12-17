@@ -1,4 +1,4 @@
-## THIS IS A FORM FROM [HERE](https://sr.ht/~sircmpwn/kineto/)
+## THIS IS A FORK FROM [HERE](https://sr.ht/~sircmpwn/kineto/)
 
 # kineto
 
