@@ -37,7 +37,7 @@ html {
 body {
     max-width: 920px;
     margin: 0 auto;
-    padding: 1rem 2rem;
+    padding: 1rem 0rem;
 }
 
 blockquote, pre {
@@ -60,9 +60,7 @@ pre[alt^="PRE"] {
 
 
 pre {
-    overflow-x: auto;
     font-family: var(--font);
-
 }
 
 ul, li {
@@ -71,7 +69,7 @@ ul, li {
 }
 
 li:not(:last-child) {
-    margin-bottom: 0.5rem;
+    /* margin-bottom: 0.5rem; */
 }
 
 a {
@@ -103,11 +101,11 @@ dl dt {
 }
 
 dl dt:not(:first-child) {
-    margin-top: 0.5rem;
+    /* margin-top: 0.5rem; */
 }
 
 label, dl dt {
     display: block;
     font-weight: bold;
-    margin-bottom: 0.5rem;
+    /* margin-bottom: 0.5rem; */
 }
